@@ -204,7 +204,7 @@ import { mapGetters } from 'vuex'
           'customer_country':this.form.customer_country,
           'product_name':this.form.product_name,
           'product_description':this.form.product_description,
-          'amount':this.form.amount,
+          'amount':parseFloat(this.form.amount),
         }
         console.log(data)
         this.createOrder(data, event);
@@ -238,11 +238,12 @@ import { mapGetters } from 'vuex'
             const response = await axios.post("create-order", data);
             this.success_message = 'Order Create succesfull.'
             this.success = true;
+            this.onReset(event);
           } catch (error) {
             console.log(error)
           }
           this.isActive = false;
-          this.onReset(event);
+       
       },
     }
   }

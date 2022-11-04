@@ -112,7 +112,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         'customer_country': this.form.customer_country,
         'product_name': this.form.product_name,
         'product_description': this.form.product_description,
-        'amount': this.form.amount
+        'amount': parseFloat(this.form.amount)
       };
       console.log(data);
       this.createOrder(data, event);
@@ -154,21 +154,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 response = _context.sent;
                 _this2.success_message = 'Order Create succesfull.';
                 _this2.success = true;
-                _context.next = 11;
+                _this2.onReset(event);
+                _context.next = 12;
                 break;
-              case 8:
-                _context.prev = 8;
+              case 9:
+                _context.prev = 9;
                 _context.t0 = _context["catch"](0);
                 console.log(_context.t0);
-              case 11:
+              case 12:
                 _this2.isActive = false;
-                _this2.onReset(event);
               case 13:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 8]]);
+        }, _callee, null, [[0, 9]]);
       }))();
     }
   }
