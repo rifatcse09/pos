@@ -51,7 +51,7 @@ class OrderController extends Controller
 
         $data = array(
             'order' => array(
-                "amount" => 1111,
+                "amount" => (float)$request->amount,
                 "currency" => "BDT",
                 "redirect_url" => config('api.redirect_url')
             ),
