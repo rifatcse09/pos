@@ -39,6 +39,10 @@ API_SECRET_KEY=YOUR_PORT_WALLET_API_SECRET_KEY
 ```
 $ php artisan migrate
 $ php artisan db:seed
+
+or can import
+pos.sql attached in project root directory
+
 ```
 
 7. Install passport
