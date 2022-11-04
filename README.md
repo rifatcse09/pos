@@ -2,7 +2,7 @@
 
 ## Description
 
-The task is developed by Laravel 8. Laravel Repository Pattern is used for development. Laravel Passport is used for API authentication. Frontend is developed by Vue JS SB Admin Template.In development, SOLID design principles are fully followed for coding. The task has PHPUnit test case.
+The task is developed by Laravel 8. Laravel Repository Pattern is used for development. Laravel Passport is used for API authentication. Frontend is developed by Vue JS SB Admin Template.In development, The task has PHPUnit test case.
 
 ### Installation
 

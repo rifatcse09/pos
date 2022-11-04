@@ -3167,7 +3167,7 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({
           url: "orders",
           method: "GET"
         }).then(function (res) {
-          commit("set_orders", res.data.data);
+          commit("set_orders", res.data);
           resolve(res);
         });
       });

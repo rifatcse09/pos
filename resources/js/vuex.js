@@ -27,7 +27,7 @@ const store = new Vuex.Store({
                     url: "orders",
                     method: "GET",
                 }).then((res) => {
-                    commit("set_orders", res.data.data);
+                    commit("set_orders", res.data);
                     resolve(res);
                 });
             });
