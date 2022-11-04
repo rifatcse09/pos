@@ -40,7 +40,7 @@ class OrderController extends Controller
             $limit = 50;
         }
 
-        $orders = Order::get();;
+        $orders = Order::get();
 
         return $this::success($orders, __('Order List'), Response::HTTP_OK);
     }
