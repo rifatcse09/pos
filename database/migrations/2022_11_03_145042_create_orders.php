@@ -29,6 +29,7 @@ class CreateOrders extends Migration
             $table->decimal('amount', 10, 2)->notnull();
             $table->enum('payment_status', ['PAID', 'PENDING', 'EXPIRED', 'FULFILLED', 'REFUND'])->default('PENDING');
             $table->string('payment_url');
+            $table->tinyInteger('status')->default('1');
             $table->timestamps();
         });
     }

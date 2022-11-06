@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Order;
 
 class UserSeeder extends Seeder
 {
@@ -15,5 +16,6 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::factory()->count(2)->create();
+        Order::factory()->count(100)->create();
     }
 }

@@ -13,6 +13,7 @@ import Toasted from "vue-toasted";
 import Chart from "chart.js";
 
 window.Vue = require("vue").default;
+window.JSZip = require("jszip");
 Vue.use(Toasted);
 /**
  * The following block of code may be used to automatically register your
@@ -36,5 +37,5 @@ Vue.component("app", require("./App.vue").default);
 const app = new Vue({
     router,
     store,
-    el: "#app"
+    el: "#app",
 });
